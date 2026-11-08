@@ -1,0 +1,43 @@
+.page { min-height: 100%; background: var(--bg); }
+.header {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand { display: flex; align-items: center; gap: 12px; font-family: var(--font-head); font-weight: 800; font-size: 22px; color: var(--text); }
+.brand:hover { text-decoration: none; }
+.logo { width: 42px; height: 42px; border-radius: 12px; box-shadow: var(--shadow); }
+.accent { color: var(--primary-strong); }
+.actions { display: flex; gap: 10px; }
+.loginBtn, .registerBtn { padding: 10px 20px; border-radius: 10px; font-weight: 600; }
+.loginBtn { background: var(--surface); border: 1px solid var(--border-soft); color: var(--text-muted); }
+.registerBtn { background: var(--navy-2); color: #fff; }
+.loginBtn:hover, .registerBtn:hover { text-decoration: none; }
+.registerBtn:hover { background: var(--navy); }
+
+.main { max-width: 900px; margin: 0 auto; padding: 36px 20px 64px; text-align: center; }
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.dot { width: 8px; height: 8px; border-radius: 50%; background: #10b981; }
+.title { font-size: clamp(34px, 6vw, 56px); font-weight: 800; line-height: 1.12; margin: 22px 0 18px; }
+.sub { color: var(--text-muted); font-size: 17px; max-width: 620px; margin: 0 auto; }
+.cta { display: flex; gap: 12px; justify-content: center; margin: 30px 0 44px; flex-wrap: wrap; }
+.primaryCta, .secondaryCta { display: inline-flex; align-items: center; gap: 8px; padding: 14px 24px; border-radius: 12px; font-weight: 600; }
+.primaryCta { background: var(--navy-2); color: #fff; }
+.primaryCta:hover { background: var(--navy); text-decoration: none; }
+.secondaryCta { background: var(--surface); border: 1px solid var(--border-soft); color: var(--text); }
+.secondaryCta:hover { background: var(--surface-low); text-decoration: none; }
+.heroFrame { background: var(--surface); padding: 10px; border-radius: 24px; border: 1px solid var(--border-soft); box-shadow: var(--shadow); }
+.hero { display: block; width: 100%; border-radius: 16px; }

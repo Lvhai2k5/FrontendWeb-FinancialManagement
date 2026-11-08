@@ -1,0 +1,25 @@
+.page { min-height: 100%; display: grid; place-items: center; padding: 32px 16px; }
+.card {
+  width: min(560px, 100%);
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.wide { width: min(780px, 100%); }
+.split { width: min(1180px, 100%); display: grid; grid-template-columns: 5fr 6fr; }
+.aside { background: var(--surface-low); padding: 40px 48px; display: flex; flex-direction: column; gap: 20px; }
+.form { padding: 40px 48px; display: flex; flex-direction: column; gap: 18px; }
+.brandRow { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 12px; color: var(--text); }
+.brand:hover { text-decoration: none; }
+.logo { width: 46px; height: 46px; border-radius: 12px; }
+.name { display: block; font-family: var(--font-head); font-size: 18px; }
+.tag { display: block; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); font-weight: 500; }
+.pill { background: var(--primary-soft); color: var(--primary); border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 600; }
+
+@media (max-width: 900px) {
+  .split { grid-template-columns: 1fr; }
+  .aside { display: none; }
+  .form { padding: 28px 22px; }
+}

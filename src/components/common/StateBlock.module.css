@@ -1,0 +1,19 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 48px 16px;
+  color: var(--text-soft);
+  text-align: center;
+}
+.errIcon { color: var(--danger); }
+.spinner {
+  width: 26px;
+  height: 26px;
+  border: 3px solid var(--primary-soft);
+  border-top-color: var(--primary-strong);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }

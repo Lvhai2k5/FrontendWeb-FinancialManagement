@@ -1,0 +1,17 @@
+.nav { display: flex; align-items: center; gap: 6px; }
+.btn {
+  min-width: 32px;
+  height: 32px;
+  padding: 0 8px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 6px;
+  background: var(--surface-mid);
+  font-weight: 600;
+}
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.btn:hover:not(:disabled) { background: var(--surface-high); }
+.active { background: var(--primary-strong); color: #fff; }
+.active:hover:not(:disabled) { background: var(--primary); }
+.gap { color: var(--text-soft); padding: 0 2px; }
