@@ -1,0 +1,13 @@
+.tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+.tab { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 1px solid var(--border-soft); background: var(--surface); border-radius: var(--radius); font-weight: 500; color: var(--text-muted); }
+.tabOn { background: var(--primary-strong); border-color: var(--primary-strong); color: #fff; font-weight: 600; }
+.count { background: rgba(0, 0, 0, 0.07); border-radius: 999px; padding: 0 8px; font-size: 12px; }
+.tabOn .count { background: rgba(255, 255, 255, 0.25); }
+.id { font-weight: 700; }
+.sub { color: var(--text-soft); font-size: 12px; }
+.person { display: flex; align-items: center; gap: 10px; }
+.avatar { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; display: grid; place-items: center; background: var(--primary-soft); color: var(--primary); font-weight: 700; flex-shrink: 0; }
+.name { font-weight: 600; }
+.roles { display: flex; gap: 6px; flex-wrap: wrap; }
+.modalTarget { margin-top: 10px; color: var(--text); }
+.modalError { margin-top: 10px; color: var(--danger); }

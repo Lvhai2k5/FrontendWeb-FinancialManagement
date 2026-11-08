@@ -1,0 +1,7 @@
+.wrap { width: 100%; }
+.legend { display: flex; gap: 16px; justify-content: flex-end; margin-bottom: 6px; font-size: 12px; color: var(--text-muted); }
+.legendItem { display: inline-flex; align-items: center; gap: 6px; }
+.swatch { width: 10px; height: 10px; border-radius: 50%; }
+.svg { width: 100%; height: auto; display: block; }
+.grid { stroke: var(--border-soft); stroke-dasharray: 4 4; }
+.tick { fill: var(--text-soft); font-size: 11px; }

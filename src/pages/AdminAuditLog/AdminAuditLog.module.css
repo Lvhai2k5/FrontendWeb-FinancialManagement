@@ -1,0 +1,4 @@
+.logId { color: var(--primary); font-weight: 700; white-space: nowrap; }
+.who { font-weight: 600; }
+.sub { color: var(--text-soft); font-size: 12px; }
+.desc { max-width: 360px; color: var(--text-muted); }

@@ -1,0 +1,103 @@
+/* Design tokens — theo "Apex Ledger" (Document/UI/stitch_mobile_app_design/apex_ledger/DESIGN.md) */
+:root {
+  --bg: #f8f9ff;
+  --surface: #ffffff;
+  --surface-low: #eff4ff;
+  --surface-mid: #e5eeff;
+  --surface-high: #dce9ff;
+  --text: #0b1c30;
+  --text-muted: #434655;
+  --text-soft: #737686;
+  --border: #c3c6d7;
+  --border-soft: #e2e8f0;
+  --primary: #004ac6;
+  --primary-strong: #2563eb;
+  --primary-soft: #dbe1ff;
+  --navy: #0f172a;
+  --navy-2: #1e293b;
+  --navy-text: #94a3b8;
+  --success: #006242;
+  --success-bg: #e6f7ef;
+  --warning: #92400e;
+  --warning-bg: #fffbeb;
+  --danger: #ba1a1a;
+  --danger-bg: #ffdad6;
+  --info: #075985;
+  --info-bg: #e0f2fe;
+  --radius: 8px;
+  --radius-lg: 14px;
+  --shadow: 0 1px 2px rgba(15, 23, 42, 0.06), 0 4px 16px rgba(15, 23, 42, 0.05);
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-head: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-head);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary-strong);
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
